@@ -1,6 +1,6 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import { FaGithub, FaInstagram } from 'react-icons/fa';
+import Link from "next/link";
+import Image from "next/image";
+import { FaGithub, FaInstagram } from "react-icons/fa";
 
 const Navbar = () => {
   return (
@@ -19,10 +19,30 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="flex space-x-6 md:space-x-8 items-center">
-          <Link href="#about" className="text-white hover:text-primary transition">About</Link>
-          <Link href="#projects" className="text-white hover:text-primary transition">Projects</Link>
-          <Link href="#skills" className="text-white hover:text-primary transition">Skills</Link>
-          <Link href="#contact" className="text-white hover:text-primary transition">Contact</Link>
+          <Link
+            href="#about"
+            className="text-white hover:text-primary transition"
+          >
+            About
+          </Link>
+          <Link
+            href="#projects"
+            className="text-white hover:text-primary transition"
+          >
+            Projects
+          </Link>
+          <Link
+            href="#skills"
+            className="text-white hover:text-primary transition"
+          >
+            Skills
+          </Link>
+          <Link
+            href="#contact"
+            className="text-white hover:text-primary transition"
+          >
+            Contact
+          </Link>
           <a
             href="https://github.com/Rohit7008"
             target="_blank"
@@ -32,7 +52,7 @@ const Navbar = () => {
             <FaGithub size={18} /> {/* Slightly smaller icon */}
           </a>
           <a
-            href="https://instagram.com/yourusername"
+            href="https://www.instagram.com/roonity.in/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:text-primary transition"

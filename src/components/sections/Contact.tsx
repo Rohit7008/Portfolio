@@ -1,7 +1,7 @@
-'use client'
+"use client";
 
-import { motion } from 'framer-motion'
-import { Github, Instagram, Linkedin, Mail } from 'lucide-react'
+import { motion } from "framer-motion";
+import { Github, Instagram, Linkedin, Mail } from "lucide-react";
 
 export default function Contact() {
   return (
@@ -26,7 +26,10 @@ export default function Contact() {
               <input type="hidden" name="_template" value="box" />
 
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium text-gray-300 mb-2"
+                >
                   Name
                 </label>
                 <input
@@ -40,7 +43,10 @@ export default function Contact() {
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium text-gray-300 mb-2"
+                >
                   Email
                 </label>
                 <input
@@ -54,7 +60,10 @@ export default function Contact() {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium text-gray-300 mb-2"
+                >
                   Message
                 </label>
                 <textarea
@@ -94,7 +103,7 @@ export default function Contact() {
               <Linkedin size={24} />
             </a>
             <a
-              href="https://instagram.com/yourusername"
+              href="https://www.instagram.com/roonity.in/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-purple-500 transition"
@@ -111,5 +120,5 @@ export default function Contact() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }
