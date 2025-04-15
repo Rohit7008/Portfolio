@@ -1,11 +1,11 @@
-'use client'
+"use client";
 
-import { motion } from 'framer-motion'
-import Image from 'next/image'
+import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black text-white">
+    <section className="hero pt-20 md:pt-0 relative min-h-screen flex items-center justify-center overflow-hidden bg-black text-white">
       {/* Dynamic gradient background with animation */}
       <div className="absolute inset-0 z-0">
         <div className="w-full h-full bg-gradient-to-r from-[#ff0080] via-[#7b2ff7] to-[#00f5d4] bg-[length:300%_300%] animate-gradient-xy"></div>
@@ -63,6 +63,5 @@ export default function Hero() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }
-

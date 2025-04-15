@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -24,14 +24,44 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6 items-center">
-          <Link href="#about" className="text-white hover:text-primary transition">About</Link>
-          <Link href="#projects" className="text-white hover:text-primary transition">Projects</Link>
-          <Link href="#skills" className="text-white hover:text-primary transition">Skills</Link>
-          <Link href="#contact" className="text-white hover:text-primary transition">Contact</Link>
-          <a href="https://github.com/Rohit7008" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primary transition">
+          <Link
+            href="#about"
+            className="text-white hover:text-primary transition"
+          >
+            About
+          </Link>
+          <Link
+            href="#projects"
+            className="text-white hover:text-primary transition"
+          >
+            Projects
+          </Link>
+          <Link
+            href="#skills"
+            className="text-white hover:text-primary transition"
+          >
+            Skills
+          </Link>
+          <Link
+            href="#contact"
+            className="text-white hover:text-primary transition"
+          >
+            Contact
+          </Link>
+          <a
+            href="https://github.com/Rohit7008"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-primary transition"
+          >
             <FaGithub size={18} />
           </a>
-          <a href="https://www.instagram.com/roonity.in/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primary transition">
+          <a
+            href="https://www.instagram.com/roonity.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-primary transition"
+          >
             <FaInstagram size={18} />
           </a>
         </div>
@@ -50,15 +80,49 @@ const Navbar = () => {
       {/* Mobile Menu Dropdown */}
       {isOpen && (
         <div className="md:hidden bg-black/80 backdrop-blur-xl px-6 py-4 space-y-4 text-center">
-          <Link href="#about" onClick={() => setIsOpen(false)} className="block text-white hover:text-primary">About</Link>
-          <Link href="#projects" onClick={() => setIsOpen(false)} className="block text-white hover:text-primary">Projects</Link>
-          <Link href="#skills" onClick={() => setIsOpen(false)} className="block text-white hover:text-primary">Skills</Link>
-          <Link href="#contact" onClick={() => setIsOpen(false)} className="block text-white hover:text-primary">Contact</Link>
+          <Link
+            href="#about"
+            onClick={() => setIsOpen(false)}
+            className="block text-white hover:text-primary"
+          >
+            About
+          </Link>
+          <Link
+            href="#projects"
+            onClick={() => setIsOpen(false)}
+            className="block text-white hover:text-primary"
+          >
+            Projects
+          </Link>
+          <Link
+            href="#skills"
+            onClick={() => setIsOpen(false)}
+            className="block text-white hover:text-primary"
+          >
+            Skills
+          </Link>
+          <Link
+            href="#contact"
+            onClick={() => setIsOpen(false)}
+            className="block text-white hover:text-primary"
+          >
+            Contact
+          </Link>
           <div className="flex justify-center gap-6 pt-2">
-            <a href="https://github.com/Rohit7008" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primary">
+            <a
+              href="https://github.com/Rohit7008"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-primary"
+            >
               <FaGithub size={20} />
             </a>
-            <a href="https://www.instagram.com/roonity.in/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primary">
+            <a
+              href="https://www.instagram.com/roonity.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-primary"
+            >
               <FaInstagram size={20} />
             </a>
           </div>
